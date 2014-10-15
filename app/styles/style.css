@@ -695,7 +695,8 @@ section, .top, footer {
 */
 /* line 637, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/upload/dev-mac/source/stylesheets/style.scss */
 .service {
-  margin-top: 50px; }
+  margin-top: 50px;
+  min-height: 200px; }
   /* line 639, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/upload/dev-mac/source/stylesheets/style.scss */
   .service .icon {
     margin-bottom: 30px;
@@ -1322,3 +1323,6 @@ img {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     transform: scale(1, 1); }
+  .top .branding {
+    white-space: nowrap;
+  }
