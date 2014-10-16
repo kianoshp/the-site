@@ -49,7 +49,7 @@ app.post('/email', function(req, res) {
     });
 
     gmailTransport.sendMail({
-        to: 'info@cieloconcepts.com',
+        to: 'Cielo Concepts Inc <info@cieloconcepts.com>',
         subject: 'Inquiry from ' + req.body.name,
         html: req.body.message + '<br/><br/>contact number: ' + req.body.phone + '<br/>contact email: ' + req.body.email
     }, function(err, info) {
@@ -59,6 +59,7 @@ app.post('/email', function(req, res) {
         }
 
         gmailTransport.sendMail({
+            from: 'Cielo Concepts Inc <info@cieloconcepts.com>',
             to: req.body.email,
             subject: 'Thank you for your inquiry',
             html: 'Dear ' + req.body.name + ',<br/><br/><p>Thank you for your inquiry to Cielo Concepts Inc. We have receive the following message:</p><blockquote>' + req.body.message + '</blockquote><p>Someone will be in touch in with you shortly.</p> <p>Sincerely, </p><br/><p>Kianosh Pourian</p><p>CEO and Founder</p>' 
