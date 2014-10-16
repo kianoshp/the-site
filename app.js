@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var fs = require('fs');
+var mailer = require('nodemailer');
 
 var app = express();
 
@@ -35,7 +36,41 @@ app.get('/', function(req, res) {
 // app.get('/new', routes);
 
 app.post('/email', function(req, res) {
-    
+    var returnObj = {
+        result: 'sent'
+    };
+
+    var gmailTransport = mailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'info@cieloconcepts.com',
+            pass: 'Mic!elo74'
+        }
+    });
+
+    gmailTransport.sendMail({
+        to: 'info@cieloconcepts.com',
+        subject: 'Inquiry from ' + req.body.name,
+        html: req.body.message + '<br/><br/>contact number: ' + req.body.phone + '<br/>contact email: ' + req.body.email
+    }, function(err, info) {
+        if (err) {
+            returnObj.result = 'fail';
+            res.send(returnObj);
+        }
+
+        gmailTransport.sendMail({
+            to: req.body.email,
+            subject: 'Thank you for your inquiry',
+            html: 'Dear ' + req.body.name + ',<br/><br/><p>Thank you for your inquiry to Cielo Concepts Inc. We have receive the following message:</p><blockquote>' + req.body.message + '</blockquote><p>Someone will be in touch in with you shortly.</p> <p>Sincerely, </p><br/><p>Kianosh Pourian</p><p>CEO and Founder</p>' 
+        }, function(err, info) {
+            console.log(info);
+            if (err) {
+                returnObj.result = 'fail';
+            }
+
+            res.send(returnObj);
+        })
+    });
 });
 
 /// catch 404 and forward to error handler
