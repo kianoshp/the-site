@@ -34,7 +34,7 @@ $(function(){
                // Disable submit button just after the form processed 1st time successfully.
                 $('#send').attr({'disabled' : 'true', 'value' : 'Sending' });
                 /* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
-                $.post("php/email.php", $("#form").serialize(),function(result){
+                $.post("/email", $("#form").serialize(),function(result){
                     if(result == 'sent'){
                         //If the email is sent successfully, remove the submit button
                         $('#send').attr({'disabled' : 'true', 'value' : 'Thank you!' });
