@@ -130,7 +130,9 @@
         $('.lightbox .title h3').html(title);
 
         var desc = item.find('.caption p').html();
+        var target = item.find('.caption p').data().jsTarget;
         $('.lightbox .description p').html(desc);
+        $('.lightbox .description p').data('jsTarget', target);
 
         img.removeClass('show');
         setTimeout(showImage,1000);
@@ -148,7 +150,9 @@
     }
 
     $('.lightbox img').click(function(){
-        $(this).toggleClass('large');
+        var target = $(this).siblings('.description').find('p').data().jsTarget;
+        window.open(target);
+        // $(this).toggleClass('large');
     });
 
     $('.lightbox .x').click(function(){
