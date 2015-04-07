@@ -823,12 +823,16 @@ footer {
   /* line 755, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/upload/dev-mac/source/stylesheets/style.scss */
   footer .icon {
     color: #777;
+    border: 1px solid #777;
     font-size: 14px;
     height: 25px;
     width: 25px;
     text-align: center;
     line-height: 25px;
     margin-bottom: 4px; }
+  footer .icon:hover {
+    border-color: #fff;
+    color: #fff; }
   /* line 763, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/upload/dev-mac/source/stylesheets/style.scss */
   footer form {
     padding-top: 10px; }
