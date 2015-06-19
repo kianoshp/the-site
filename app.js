@@ -16,7 +16,9 @@ app.set('view engine', 'jade');
 app.use(favicon(__dirname + '/app/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'app')));
 
@@ -33,6 +35,12 @@ app.get('/', function(req, res) {
     });
 });
 
+
+app.get('/new', function(req, res) {
+    fs.readFile(__dirname + '/app/new-site/index.html', 'utf8', function(err, text) {
+        res.send(text);
+    });    
+});
 // app.get('/new', routes);
 
 app.post('/email', function(req, res) {
