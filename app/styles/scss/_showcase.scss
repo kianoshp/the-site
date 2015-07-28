@@ -1,0 +1,140 @@
+.showcase_head {
+	.header_container {
+		background-color: $dk-blue;
+		&.fixed {
+			background-color: black(0.6);
+		}
+		.home {
+			a {
+				&:before {
+					content: "\f177";
+					color: $lt-blue;
+					font-family: "fontawesome";
+					margin-right: 0.5em;
+				}
+			}
+		}
+	}
+}
+
+.showcase_entry {
+	background-color: $white;
+	* {
+		color: $gry;
+	}
+	.image, .entry {
+		padding-bottom: 2em;
+	}
+	.sites {
+		@include grid_row();
+		@include fadeIn(
+			$delay: .3s,
+			$function: ease
+		);
+		.title {
+			padding: 2em 0 1em;
+			.site_title {
+				@include grid_column(12);
+				h1 {
+					@include montserrat($size: em(42px), $tt: uppercase);
+					@include bp(small) {
+						font-size: em(24px);
+						padding-bottom: 1.5em;
+					}
+					color: $lt-blue;
+					margin: 0;
+				}
+			}
+		}
+		.url {
+			ul {
+				@include inline_list($padding: em(3px) 0 3px(10px) 0, $li-padding: 0 0.5em 0);
+				* {
+					font-size: 0.95em;
+				}
+				strong {
+					color: $lt-blue;
+					text-transform: uppercase;
+					padding-right: 0.5em;
+					display: inline-block;
+					&:after {
+						content: ":";
+					}
+				}
+				span {
+					padding-right: 0.3em;
+					display: inline-block;
+					&:after {
+						content: ",";
+					}
+					&:last-child {
+						&:after {
+							content: "";
+						}
+					}
+				}
+			}
+		}
+		.visit {
+			a {
+				@include btn($size: em(12px));
+				border: 1px solid lighten($gry, 30%);
+			}
+		}
+		.showcase_location, .site_image {
+			@include grid_row($behavior: nested);
+			.url {
+				@include grid_column(12);
+				@include bp(medium_up) {
+					@include grid_column(10);
+				}
+			}
+			.visit {
+				@include grid_column(12);
+				@include bp(medium_up) {
+					@include grid_column(2);
+				}
+				text-align: right;
+			}
+			.featured_image {
+				@include grid_column(12);
+			}
+		}
+		.entry {
+			@include grid_row($behavior: nested);
+			.gallery {
+				@include grid_column(12);
+				@include bp(medium_up) {
+					@include grid_column(6, $pull:6);
+				}
+				.site_images {
+					@include flat_list();
+					li {
+						margin-bottom: 0.5em;
+					}
+				}
+			}
+			.content {
+				@include grid_column(12);
+				padding-bottom: 1em;
+				@include bp(medium_up) {
+					@include grid_column(6, $push:6);
+				}
+				.title {
+					padding: 0 0 1em;
+					h2 {
+						@include montserrat($size: em(28px), $tt: uppercase);
+						@include bp(small) {
+							font-size: em(18px);
+						}
+						color: $lt-blue;
+						margin: 0;
+					}
+				}
+				
+			}
+		}
+
+		
+	}
+}
