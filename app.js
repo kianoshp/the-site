@@ -34,6 +34,17 @@ app.get('/new', function(req, res) {
   })
 });
 
+app.get('/showcase', function(req, res) {
+  router.showcase(req, res, {});
+});
+
+app.get('/privacy', function(req, res) {
+  fs.readFile(__dirname + '/app/privacy-policy.html', 'utf8', function(err, text) {
+    res.send(text);
+  });
+
+});
+
 app.post('/email', function(req, res) {
     var returnObj = {
         result: 'sent'

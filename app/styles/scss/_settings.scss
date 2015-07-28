@@ -1,0 +1,76 @@
+// PATHS
+$fontPath : "fonts";
+$imgPath : "../images/new-design/";
+
+
+// THEME SPECIFIC DEFS 
+
+// FONTS! 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic);
+
+$open-sans: 'Open+Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$merriweather: 'Merriweather', serif;
+
+@mixin open-sans($size: em(16px), $style: normal, $weight: normal, $tt: none) {
+	font-family: $open-sans;
+	font-size: $size;
+	font-style: $style;
+	font-weight: $weight;
+	text-transform: $tt;
+}
+
+@mixin montserrat($size: em(16px), $style: normal, $weight: normal, $tt: none) {
+	font-family: $montserrat;
+	font-size: $size;
+	font-style: $style;
+	font-weight: $weight;
+	text-transform: $tt;
+}
+
+@mixin merriweather($size: em(16px), $style: normal, $weight: normal, $tt: none) {
+	font-family: $merriweather;
+	font-size: $size;
+	font-style: $style;
+	font-weight: $weight;
+	text-transform: $tt;
+}
+
+// Breakpoints
+$breakpoints:(
+	small: 640px,
+	medium: 768px,
+	large: 1024px
+);
+
+/* CORE SETTINGS */
+
+@mixin btn($size: em(16px), $weight: normal) {
+	color: $white;
+	font-family: $montserrat;
+	font-size: $size;
+	font-weight: $weight;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: $org;
+	border: 1px solid $white;
+	padding: 0.5em 1.8em;
+	display: inline-block;
+	&:hover {
+		background-color: $lt-blue;
+	}
+	@include bp(small) {
+		width: 100%;
+	}
+}
+
+
+// GLOBALS
+$dk-blue: #252A35;
+$lt-blue: #4A90E2;
+$org: #F27535;
+$gry: #7A797A;
+
+

@@ -1,0 +1,174 @@
+// Header
+.head {
+	.bg {
+		background-image: url('#{$imgPath}/img_header.jpg');
+		background-size: cover;
+	}
+}
+.header_container {
+	width: 100%;
+	position: fixed;
+	transition: all 0.4s ease;
+	z-index: 1;
+	&.fixed {
+		background-color: black(0.6);
+		position: fixed;
+		z-index: 2000;
+	}
+	* {
+		color: $white;
+	}
+	.main {
+		@include grid-row();
+		.logo {
+			@include grid-column(4);
+			h1 {
+				@include zero_out();
+				padding: 0.9em 0 0;
+			}
+			a {
+				text-indent: -999em;
+				background: url("#{$imgPath}/logo.svg") no-repeat 0 0;
+				background-size: contain;
+				width: 250px;
+				height: 30px;
+				display: block;
+			}
+		}
+		.page_nav {
+			@include grid-column(8);
+			a {
+				@include montserrat($size: em(14px), $weight: bold);
+			}
+			ul {
+				@include inline_list($float: right, $padding: 1em, $li-margin: 10px);
+				&.social {
+					padding-right: 0;
+				}
+				li {
+					margin-left: 0;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.nav {
+				margin: 7px 0 0;
+				display: none;
+				@include bp(medium_up) {
+					display: block;
+				}
+				a {
+					&:hover {
+						color: lighten($lt-blue, 10%);
+					}
+				}
+			}
+			.s_link {
+				display: none;
+				@include bp(medium_up) {
+					display: block;
+				}
+				a {
+					@include border-top-radius(50%);
+					@include border-right-radius(50%);
+					@include border-bottom-radius(50%);
+					@include border-left-radius(50%);
+					text-align: center;
+					background-color: $lt-blue;
+					border: 3px solid $white;
+					padding: 5px;
+					width: 40px;
+					height: 40px;
+					display: inline-block;
+					&:hover {
+						background-color: $org;
+					}
+					.icon {
+						background-position: 0 0;
+						background-repeat: no-repeat;
+						background-size: contain;
+						margin: 0 auto;
+						width: 20px;
+						height: 20px;
+						display: block;
+					}
+				}
+			}
+			.menu {
+				padding: 10px 0;
+				.ham {
+					background: url("#{$imgPath}/hamburger.svg") no-repeat 0 0;
+					background-size: contain;
+					width: 25px;
+					height: 17px;
+					display: block;
+					@include bp(medium_up) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.hero {
+	@include abs_pos ($top: 0, $right: 0, $bottom: 0, $left: 0);
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	height: 50%;
+	z-index: 1;
+	@include bp(medium_up) {
+		width: 60%;
+		height: 30%;
+	}
+	* {
+		color: $white;
+		margin: 0;
+	}
+	hgroup {
+		margin-bottom: 2em;
+		h3 {
+			@include merriweather($size: em(22px), $style: italic);
+			@include bp(medium_up) {
+				@include merriweather($size: em(36px), $style: italic);
+			}
+			@include header_line($top: 0.7em);
+			@include fadeInDown(
+				$delay: .3s,
+				$function: ease
+			);
+		}
+		h1 {
+			@include montserrat($size: em(36px), $tt: uppercase);
+			@include bp(medium_up) {
+				@include montserrat($size: em(72px), $tt: uppercase);
+			}
+			@include fadeIn(
+				$delay: .5s,
+				$function: ease
+			);
+		}
+		h2 {
+			@include montserrat($size: em(24px), $tt: uppercase);
+			@include bp(medium_up) {
+				@include montserrat($size: em(48px), $tt: uppercase);
+			}
+			@include header_line($top: 0.7em);
+			@include fadeInUp(
+				$delay: .7s,
+				$function: ease
+			);
+		}
+	}
+	.cta_block {
+		@include fadeIn(
+			$delay: .9s,
+			$function: ease
+		);
+		.btn {
+			@include btn($size: em(16px));
+		}
+	}	
+}
