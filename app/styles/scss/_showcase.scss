@@ -32,6 +32,7 @@
 			$function: ease
 		);
 		.title {
+			margin: 3.5em;
 			padding: 2em 0 1em;
 			.site_title {
 				@include grid_column(12);

@@ -35,7 +35,9 @@ app.get('/new', function(req, res) {
 });
 
 app.get('/showcase', function(req, res) {
-  router.showcase(req, res, {});
+  router.showcase(req, res, {
+    showcaseTitle: 'New title'
+  });
 });
 
 app.get('/privacy', function(req, res) {
