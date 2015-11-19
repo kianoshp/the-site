@@ -225,3 +225,19 @@ figure {
 		}
 	}
 }
+
+.right-off-canvas-menu {
+	padding-top: 130px;
+	width: 100%;
+	position: fixed;
+	ul {
+		@include flat_list();
+		border-top: 1px solid $gry;
+		a {
+			text-align: center;
+			border-bottom: 1px solid $gry;
+			padding: 1em 2em;
+			display: block;
+		}
+	}
+}

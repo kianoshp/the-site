@@ -3,8 +3,8 @@ var routes = {
     return res.render('main/index', options);
   },
 
-  showcase: function(req, res, options) {
-    return res.render('main/showcase_template', options);
+  portfolio: function(req, res, options) {
+    return res.render('main/portfolio', options);
   }
 }
 

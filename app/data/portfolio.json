@@ -1,0 +1,70 @@
+{
+  "HBR": {
+    "title": "Responsive Re-design of HBR.org",
+    "url": "http://hbr.org",
+    "technologies": ["Atomic Design", "Pattern Lab", "Sass CSS", "Custom JavaScript Framework"],
+    "images": {
+      "hero": "/images/HBR/hbr-hero.png",
+      "thumbnail": "/images/HBR/hbr-logo.svg",
+      "small1": "/images/HBR/hbr-myLibrary.png",
+      "small2": "/images/HBR/hbr-ecommerce.png"
+    },
+    "subTitle": "New workflow with Pattern Lab",
+    "content": [
+      "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.",
+      "Well, do you have anything to say for yourself? here. put that in your report! I may have found a way out of here. ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy. this is my gun, clyde! man's gotta know his limitations. you want a guarantee, buy a toaster. are you feeling lucky punk don't p!ss down my back and tell me it's raining. what you have to ask yourself is, do i feel lucky. well do ya' punk? you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. dyin' ain't much of a livin', boy.",
+      "We are very much alike, you and i, i and you... us. do you like my meadow? try some of my grass! please have a blade, please do, it's so delectable and so darn good looking! what? no. we can't stop here. this is bat country. forget about it is, like, if you agree with someone, you know, like raquel welch is one great piece of ass. forget about it! but then, if you disagree, like a lincoln is better than a cadillac? forget about it! you know? but then, it's also like if something's the greatest thing in the world, like, minghia! those peppers! forget about it! we're not sheep! well, then, i confess, it is my intention to commandeer one of these ships, pick up a crew in tortuga, raid, pillage, plunder and otherwise pilfer my weasely black guts out. holy jesus. what are these goddamn animals? we had two bags of grass, seventy-five pellets of mescaline, five sheets of high-powered blotter acid, a saltshaker half-full of cocaine, and a whole galaxy of multi-colored uppers, downers, screamers, laughers... a drug person can learn to cope with things like seeing their dead grandmother crawling up their leg with a knife in her teeth. but no one should be asked to handle this trip. giddy-up... no, no this way... good horsey. me? i'm dishonest, and a dishonest man you can always trust to be dishonest. honestly. it's the honest ones you want to watch out for, because you can never predict when they're going to do something incredibly... stupid."
+    ]
+  },
+  "familyEyeCare": {
+    "title": "Small Business Re-Designed",
+    "url": "http://www.completefamilyeyecaretexas.com/",
+    "technologies": ["HTML", "CSS", "Third Party APp Integration"],
+    "images": {
+      "hero": "/images/familyEyeCare/eyeCare-hero.png",
+      "thumbnail": "/images/familyEyeCare/eyeCare-logo.png",
+      "small1": "/images/HBR/hbr-myLibrary.png",
+      "small2": "/images/HBR/hbr-ecommerce.png"
+    },
+    "subTitle": "Promoting Small Businesses on the Web",
+    "content": [
+      "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.",
+      "Well, do you have anything to say for yourself? here. put that in your report! I may have found a way out of here. ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy. this is my gun, clyde! man's gotta know his limitations. you want a guarantee, buy a toaster. are you feeling lucky punk don't p!ss down my back and tell me it's raining. what you have to ask yourself is, do i feel lucky. well do ya' punk? you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. dyin' ain't much of a livin', boy.",
+      "We are very much alike, you and i, i and you... us. do you like my meadow? try some of my grass! please have a blade, please do, it's so delectable and so darn good looking! what? no. we can't stop here. this is bat country. forget about it is, like, if you agree with someone, you know, like raquel welch is one great piece of ass. forget about it! but then, if you disagree, like a lincoln is better than a cadillac? forget about it! you know? but then, it's also like if something's the greatest thing in the world, like, minghia! those peppers! forget about it! we're not sheep! well, then, i confess, it is my intention to commandeer one of these ships, pick up a crew in tortuga, raid, pillage, plunder and otherwise pilfer my weasely black guts out. holy jesus. what are these goddamn animals? we had two bags of grass, seventy-five pellets of mescaline, five sheets of high-powered blotter acid, a saltshaker half-full of cocaine, and a whole galaxy of multi-colored uppers, downers, screamers, laughers... a drug person can learn to cope with things like seeing their dead grandmother crawling up their leg with a knife in her teeth. but no one should be asked to handle this trip. giddy-up... no, no this way... good horsey. me? i'm dishonest, and a dishonest man you can always trust to be dishonest. honestly. it's the honest ones you want to watch out for, because you can never predict when they're going to do something incredibly... stupid."
+    ]
+  },
+  "perkinElmer": {
+    "title": "Upgrading an Old Architecture",
+    "url": "http://elements.perkinelmer.com",
+    "technologies": ["Atomic Design", "Pattern Lab", "Sass CSS", "ReactJS", "Flux"],
+    "images": {
+      "hero": "/images/HBR/hbr-hero.png",
+      "thumbnail": "/images/HBR/hbr-logo.svg",
+      "small1": "/images/HBR/hbr-myLibrary.png",
+      "small2": "/images/HBR/hbr-ecommerce.png"
+    },
+    "subTitle": "Building a Modular Application",
+    "content": [
+      "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.",
+      "Well, do you have anything to say for yourself? here. put that in your report! I may have found a way out of here. ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy. this is my gun, clyde! man's gotta know his limitations. you want a guarantee, buy a toaster. are you feeling lucky punk don't p!ss down my back and tell me it's raining. what you have to ask yourself is, do i feel lucky. well do ya' punk? you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. dyin' ain't much of a livin', boy.",
+      "We are very much alike, you and i, i and you... us. do you like my meadow? try some of my grass! please have a blade, please do, it's so delectable and so darn good looking! what? no. we can't stop here. this is bat country. forget about it is, like, if you agree with someone, you know, like raquel welch is one great piece of ass. forget about it! but then, if you disagree, like a lincoln is better than a cadillac? forget about it! you know? but then, it's also like if something's the greatest thing in the world, like, minghia! those peppers! forget about it! we're not sheep! well, then, i confess, it is my intention to commandeer one of these ships, pick up a crew in tortuga, raid, pillage, plunder and otherwise pilfer my weasely black guts out. holy jesus. what are these goddamn animals? we had two bags of grass, seventy-five pellets of mescaline, five sheets of high-powered blotter acid, a saltshaker half-full of cocaine, and a whole galaxy of multi-colored uppers, downers, screamers, laughers... a drug person can learn to cope with things like seeing their dead grandmother crawling up their leg with a knife in her teeth. but no one should be asked to handle this trip. giddy-up... no, no this way... good horsey. me? i'm dishonest, and a dishonest man you can always trust to be dishonest. honestly. it's the honest ones you want to watch out for, because you can never predict when they're going to do something incredibly... stupid."
+    ]
+  },
+  "academy": {
+    "title": "Contributing to E-Commerce",
+    "url": "http://academy.com",
+    "technologies": ["Front End Development", "E-Commerce"],
+    "images": {
+      "hero": "/images/HBR/hbr-hero.png",
+      "thumbnail": "/images/HBR/hbr-logo.svg",
+      "small1": "/images/HBR/hbr-myLibrary.png",
+      "small2": "/images/HBR/hbr-ecommerce.png"
+    },
+    "subTitle": "Helping to grow the economy",
+    "content": [
+      "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.",
+      "Well, do you have anything to say for yourself? here. put that in your report! I may have found a way out of here. ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy. this is my gun, clyde! man's gotta know his limitations. you want a guarantee, buy a toaster. are you feeling lucky punk don't p!ss down my back and tell me it's raining. what you have to ask yourself is, do i feel lucky. well do ya' punk? you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. dyin' ain't much of a livin', boy.",
+      "We are very much alike, you and i, i and you... us. do you like my meadow? try some of my grass! please have a blade, please do, it's so delectable and so darn good looking! what? no. we can't stop here. this is bat country. forget about it is, like, if you agree with someone, you know, like raquel welch is one great piece of ass. forget about it! but then, if you disagree, like a lincoln is better than a cadillac? forget about it! you know? but then, it's also like if something's the greatest thing in the world, like, minghia! those peppers! forget about it! we're not sheep! well, then, i confess, it is my intention to commandeer one of these ships, pick up a crew in tortuga, raid, pillage, plunder and otherwise pilfer my weasely black guts out. holy jesus. what are these goddamn animals? we had two bags of grass, seventy-five pellets of mescaline, five sheets of high-powered blotter acid, a saltshaker half-full of cocaine, and a whole galaxy of multi-colored uppers, downers, screamers, laughers... a drug person can learn to cope with things like seeing their dead grandmother crawling up their leg with a knife in her teeth. but no one should be asked to handle this trip. giddy-up... no, no this way... good horsey. me? i'm dishonest, and a dishonest man you can always trust to be dishonest. honestly. it's the honest ones you want to watch out for, because you can never predict when they're going to do something incredibly... stupid."
+    ]
+  }  
+}

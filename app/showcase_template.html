@@ -1,133 +1,165 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/new-design/vendor/modernizr-2.min.js"></script>
   </head>
-  <body>
-    <section class="showcase_head">
-      <div class="header_container">
-        <header class="main">
-          <div class="logo">
-            <h1><a href="#top"></a></h1>
-          </div>
-          <nav class="page_nav">
-            <ul class="social">
-              <li class="s_link"><a href=""><span class="icon tw"><img src="images/new-design/social_tw.svg" alt=""></span></a></li>
-              <li class="s_link"><a href=""><span class="icon ln"><img src="images/new-design/social_ln.svg" alt=""></span></a></li>
-              <li class="menu"><a href="#" class="ham right-off-canvas-toggle"></a></li>
-            </ul>
-            <ul class="nav">
-              <li class="home"><a href="/">Back to index</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-    </section>
-    <section class="block showcase_entry">
-      <div class="sites">
-        <article class="image">
-          <header class="title">
-            <div class="site_title">
-              <h1>Showcase Title</h1>
+  <body class="showcase">
+    <div data-offcanvas class="off-canvas-wrap">
+      <section class="showcase_head">
+        <div class="header_container">
+          <header class="main">
+            <div class="logo">
+              <h1><a href="#top"></a></h1>
             </div>
-            <div class="showcase_location">
-              <div class="url">
-                <ul>
-                  <li class="link"> <strong>Url</strong><a href="#" target="_blank">http://www.google.com</a></li>
-                  <li class="used"><strong>Used</strong><span>Sass </span><span>Angular </span><span>Pattern.io</span></li>
-                </ul>
-              </div>
-              <div class="visit"><a src="#" target="_blank">Visit Site</a></div>
-            </div>
+            <nav class="page_nav">
+              <ul class="social">
+                <li class="s_link"><a href=""><span class="icon tw"><img src="images/new-design/social_tw.svg" alt=""></span></a></li>
+                <li class="s_link"><a href=""><span class="icon ln"><img src="images/new-design/social_ln.svg" alt=""></span></a></li>
+                <li class="menu"><a href="#" class="ham right-off-canvas-toggle"></a></li>
+              </ul>
+              <ul class="nav">
+                <li class="home"><a href="/">Back to index</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </nav>
           </header>
-          <div class="site_image">
-            <figure class="featured_image"><img src="http://placehold.it/1200x800"></figure>
-          </div>
-        </article>
-        <div class="entry">
-          <article class="content">
-            <header class="title">
-              <h2>Content</h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium consectetur rem sapiente odio voluptas, ab sequi ducimus, at pariatur quos. Explicabo ullam ut adipisci officiis aut quaerat laborum, pariatur.</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium consectetur rem sapiente odio voluptas, ab sequi ducimus, at pariatur quos. Explicabo ullam ut adipisci officiis aut quaerat laborum, pariatur.</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium consectetur rem sapiente odio voluptas, ab sequi ducimus, at pariatur quos. Explicabo ullam ut adipisci officiis aut quaerat laborum, pariatur.</p>
-            </header>
-            <footer class="visit"><a src="#" target="_blank">Visit Site</a></footer>
-          </article>
-          <section class="gallery">
-            <ul class="site_images">
-              <li><img src="http://placehold.it/600x250"></li>
-              <li><img src="http://placehold.it/600x250"></li>
-            </ul>
-          </section>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="block contact"><a name="contact"></a>
-      <div class="bg">
-        <div class="section_cover">
-          <div class="overlay"></div>
-          <article class="block_entry">
-            <div class="entry">
-              <header class="block_title">
-                <h2 class="title">Contact Us</h2>
+      </section>
+      <div class="inner-wrap">
+        <section class="block showcase_entry">
+          <div class="sites">
+            <article class="image">
+              <header class="title">
+                <div class="site_title">
+                  <div class="main_title">
+                    <h1>Showcase Title</h1>
+                  </div>
+                </div>
               </header>
-              <p> If you would like to setup a time to talk with us and see how we can help you, please fill out this form and we will contact you as soon as possible.</p>
-              <footer class="block_form">
-                <form action="/email">
-                  <div class="name">
-                    <input type="text" placeholder="Name">
-                  </div>
-                  <div class="email">
-                    <input type="email" placeholder="Email">
-                  </div>
-                  <div class="message">
-                    <textarea placeholder="Message"></textarea>
-                  </div>
-                  <div class="send">
-                    <input type="submit" value="Send">
-                  </div>
-                </form>
-              </footer>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="block foot">
-      <footer class="footer_container">
-        <div class="ft lg">
-          <div class="ft_container">
-            <div class="sub_ft loc">
-              <h5 class="title">Location</h5>
+              <div class="showcase_location">
+                <section class="url">
+                  <ul>
+                    <li class="link"> <strong>Url</strong><a href="#" target="_blank">http://www.google.com</a></li>
+                    <li class="used"><strong>Used</strong><span>Sass </span><span>Angular </span><span>Pattern.io</span></li>
+                  </ul>
+                </section>
+                <section class="visit">
+                  <p><a src="#" target="_blank" class="btn">Visit Site</a></p>
+                </section>
+              </div>
+              <div class="site_image">
+                <figure class="featured_image"><img src="http://placehold.it/1200x800"></figure>
+              </div>
               <div class="entry">
-                <ul>
-                  <li>711 Atlantic Ave</li>
-                  <li>Lower Level</li>
-                  <li>Boston, Massachusetts 02111</li>
-                  <li> <a href="tel:617-870-4574">tel. 617.870.4574</a></li>
-                  <li><a href="mailto:info@cieloconcepts.com">info@cieloconcepts.com</a></li>
-                </ul>
+                <article class="content">
+                  <header class="title">
+                    <h2>Content</h2>
+                  </header>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium consectetur rem sapiente odio voluptas, ab sequi ducimus, at pariatur quos. Explicabo ullam ut adipisci officiis aut quaerat laborum, pariatur.</p>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium consectetur rem sapiente odio voluptas, ab sequi ducimus, at pariatur quos. Explicabo ullam ut adipisci officiis aut quaerat laborum, pariatur.</p>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium consectetur rem sapiente odio voluptas, ab sequi ducimus, at pariatur quos. Explicabo ullam ut adipisci officiis aut quaerat laborum, pariatur.</p>
+                  <footer class="visit"><a src="#" target="_blank" class="btn">Visit Site</a></footer>
+                </article>
+                <section class="gallery">
+                  <ul class="site_images">
+                    <li><img src="http://placehold.it/600x250"></li>
+                    <li><img src="http://placehold.it/600x250"></li>
+                  </ul>
+                </section>
+                <section class="related bottom">
+                  <h6 class="title">Related</h6>
+                  <div class="related_items flexslider">
+                    <div>
+                      <ul class="slides">
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                        <li><a href="#"><img src="http://placehold.it/250x250"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
               </div>
-            </div>
-            <div class="sub_ft blog">
-              <h5 class="title">From the blog
-                <div class="blog_container"></div>
-              </h5>
-            </div>
-            <div class="sub_ft tweet">
-              <h5 class="title">Latest Tweets</h5>
-              <div class="entry"><a href="" data-widget-id="622787396128645120" class="twitter-timeline">Tweets by @cielo_concepts</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              </div>
+            </article>
+          </div>
+        </section>
+        <section id="contact" class="block contact"><a name="contact"></a>
+          <div class="bg">
+            <div class="section_cover">
+              <div class="overlay"></div>
+              <article class="block_entry">
+                <div class="entry">
+                  <header class="block_title">
+                    <h2 class="title">Contact Us</h2>
+                  </header>
+                  <p> If you would like to setup a time to talk with us and see how we can help you, please fill out this form and we will contact you as soon as possible.</p>
+                  <footer class="block_form">
+                    <form action="/email">
+                      <div class="name">
+                        <input type="text" placeholder="Name">
+                      </div>
+                      <div class="email">
+                        <input type="email" placeholder="Email">
+                      </div>
+                      <div class="message">
+                        <textarea placeholder="Message"></textarea>
+                      </div>
+                      <div class="send">
+                        <input type="submit" value="Send">
+                      </div>
+                    </form>
+                  </footer>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-        <div class="ft img"><img src="images/new-design/logo_icon.svg" alt=""></div>
-      </footer>
-    </section>
+        </section>
+        <section class="block foot">
+          <footer class="footer_container">
+            <div class="ft lg">
+              <div class="ft_container">
+                <div class="sub_ft loc">
+                  <h5 class="title">Location</h5>
+                  <div class="entry">
+                    <ul>
+                      <li>711 Atlantic Ave</li>
+                      <li>Lower Level</li>
+                      <li>Boston, Massachusetts 02111</li>
+                      <li> <a href="tel:617-870-4574">tel. 617.870.4574</a></li>
+                      <li><a href="mailto:info@cieloconcepts.com">info@cieloconcepts.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sub_ft blog">
+                  <h5 class="title">From the blog</h5>
+                  <div class="blog_container"></div>
+                </div>
+                <div class="sub_ft tweet">
+                  <h5 class="title">Latest Tweets</h5>
+                  <div class="entry"><a href="" data-widget-id="622787396128645120" class="twitter-timeline">Tweets by @cielo_concepts</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ft img"><img src="images/new-design/logo_icon.svg" alt=""></div>
+          </footer>
+        </section>
+        <aside class="right-off-canvas-menu">
+          <ul>
+            <li><a>Item 1</a></li>
+          </ul>
+        </aside>
+      </div><a class="exit-off-canvas"></a>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.min.js"><\/script>')</script>
     <script src="scripts/new-design/vendor/foundation/foundation.min.js"></script>
@@ -135,5 +167,7 @@
     <script src="scripts/new-design/vendor/viewportchecker.min.js"></script>
     <script src="scripts/new-design/plugins.js"></script>
     <script src="scripts/new-design/app.js"></script>
+    <script src="scripts/new-design/vendor/jquery.flexslider-min.js"></script>
+    <script src="scripts/new-design/min/showcase-min.js"></script>
   </body>
 </html>

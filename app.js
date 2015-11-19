@@ -6,9 +6,38 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var mailer = require('nodemailer');
-var router = require('./app/routes/routes');
+var routes = require('./app/routes/routes');
+var portfolioData = require('./app/data/portfolio.json');
 
 var app = express();
+
+// Profile thumbnails
+var thumbnails = [];
+for (var key in portfolioData) {
+  if (portfolioData.hasOwnProperty(key)) {
+    var tempObj = {};
+    tempObj = {
+      name: key,
+      thumbnail: portfolioData[key]["images"]["thumbnail"],
+      url: "/portolfio/" + key
+    };
+    thumbnails.push(tempObj);
+  }
+}
+
+var getOtherThumbnails = function(name) {
+  var relatedThumbnails = [];
+  console.log(thumbnails);
+  thumbnails.forEach(function(thumbnail) {
+    console.log(thumbnail);
+    if (thumbnail.name !== name) {
+      console.log(thumbnail[name]);
+      relatedThumbnails.push(thumbnail);
+    }
+  });
+
+  return relatedThumbnails;
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, '/app/views'));
@@ -21,22 +50,28 @@ app.use(bodyParser.urlencoded({extended: {}}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'app')));
 
-app.get('/', function(req, res) {
-    fs.readFile(__dirname + '/index.html', 'utf8', function(err, text) {
-        res.send(text);
-    });
-});
+// app.get('/', function(req, res) {
+//   console.log("I am in here");
+//   routes.index(req, res, 
+//   {
+//     pageTitle: 'Cielo Concepts Inc.'
+//   })
+// });
 
-app.get('/new', function(req, res) {
-  router.index(req, res, 
+app.get('/home', function(req, res) {
+  routes.index(req, res, 
   {
     pageTitle: 'Cielo Concepts Inc.'
   })
 });
 
-app.get('/showcase', function(req, res) {
-  router.showcase(req, res, {
-    showcaseTitle: 'New title'
+app.get('/portfolio/:name', function(req, res) {
+  var portfolioName = req.params.name;
+  var data = portfolioData[portfolioName];
+  data.thumbnails = getOtherThumbnails(portfolioName);
+  console.log(data);
+  routes.portfolio(req, res, {
+    data: data
   });
 });
 

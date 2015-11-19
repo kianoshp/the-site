@@ -1,0 +1,83 @@
+doctype html
+
+html(lang=en)
+  include ../includes/head.jade
+
+  body.showcase
+    div.off-canvas-wrap(data-offcanvas)
+        include ../sections/header_showcase.jade
+        div.inner-wrap
+            section.block.showcase_entry
+                div.sites
+                    article.image
+                        header.title
+                            div.site_title
+                                div.main_title
+                                    h1 #{data.title}
+                                    //- h1 Showcase Title
+                        div.showcase_location
+                            section.url
+                                ul
+                                    li.link 
+                                        strong Url
+                                        a(href="#{data.url}" target="_blank") #{data.url}
+                                    li.used
+                                        strong Used
+                                        each val in data.technologies
+                                            span= val
+
+                            section.visit
+                                p
+                                    a.btn(href="#{data.url}" target="_blank") Visit Site
+
+                            
+                        div.site_image
+                            figure.featured_image
+                                img(src="#{data.images.hero}", width="1200", height="800")
+
+                        //- Content
+                        div.entry
+                            article.content
+                                header.title
+                                    h2 #{data.subTitle}
+
+                                each val in data.content
+                                    p= val
+
+                                footer.visit
+                                    a.btn(href="#{data.url}" target="_blank") Visit Site
+
+                            section.gallery
+                                ul.site_images
+                                    li
+                                        img(src="#{data.images.small1}", width="600", height="250")
+                                        span.caption This is where the caption will go
+                                    li
+                                        img(src="#{data.images.small2}", width="600", height="250")
+
+                            section.related.bottom
+                                h6.title Related
+                                div.related_items.flexslider
+                                    div
+                                        ul.slides
+                                            each val in data.thumbnails
+                                                li
+                                                    a(href="#{val.url}")
+                                                        img(src="#{val.thumbnail}", width="250", height="250")
+
+
+            include ../sections/contact.jade
+            include ../sections/footer.jade
+
+            //- Off Canvas Menu
+            aside.right-off-canvas-menu
+                ul
+                    li
+                        a Item 1
+                        
+        a.exit-off-canvas
+
+    include ../includes/scripts.jade
+    script(src="/scripts/new-design/vendor/jquery.flexslider-min.js")
+    script(src="/scripts/new-design/min/showcase-min.js")
+

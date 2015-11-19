@@ -1,0 +1,1 @@
+!function(){function i(){return window.innerWidth<600?2:window.innerWidth<900?3:4}var n=$(window),e;n.load(function(){$(".flexslider").flexslider({animation:"slide",animationLoop:!1,itemWidth:200,itemMargin:10,minItems:4,maxItems:4})}),n.resize(function(){var n=i();e.vars.minItems=n,e.vars.maxItems=n})}();
